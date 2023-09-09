@@ -1,0 +1,172 @@
+
+body{
+   font-family: 'Poppins', sans-serif;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+/* The device with borders */
+.smartphone {
+   position: relative;
+   width: 340px;
+   height: 580px;
+   margin: auto;
+   border: 16px black solid;
+   border-top-width: 60px;
+   border-bottom-width: 60px;
+   border-radius: 36px;
+ }
+ 
+ /* The horizontal line on the top of the device */
+ .smartphone::before {
+   content: '';
+   display: block;
+   width: 60px;
+   height: 10px;
+   position: absolute;
+   top: -30px;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: #333;
+   border-radius: 10px;
+ }
+ 
+ /* The circle on the bottom of the device */
+ .smartphone:after {
+   content: '';
+   display: block;
+   width: 100px;
+   height: 28px;
+   position: absolute;
+   left: 50%;
+   top: -20px;
+   transform: translate(-50%, -50%);
+   background: #333;
+   border-radius: 20px;
+ }
+ 
+ /* The screen (or content) of the device */
+ .smartphone .content {
+   position: absolute;
+   width: 340px;
+   height: 665px;
+   border-radius: 32px;
+   background: white;
+   margin-top: -43px;
+   background-image: url("iphone14pro.jpg") !important;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .content__footer{
+   position: absolute;
+   bottom: 20px;
+   left: 10px;
+   margin: 0 auto;
+   background-color: azure;
+   width: 300px;
+   height: 65px;
+   border-radius: 25px;
+   border: 1px solid transparent;
+   padding: 5px 10px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+ }
+
+ .phone-icon{
+   width: 55px;
+   height: 55px;
+   opacity: 1;
+   border-radius: 20px;
+
+ }
+.content__header{
+   display: flex;
+}
+ .content__header-time{
+   font-size: 18px;
+   margin-left: 35px;
+   margin-top: 12px;
+   color: azure;
+ }
+
+ .content__header-right{
+   display: flex;
+   position: absolute;
+   right: 15px;
+   top: 10px;
+   align-items: center;
+   gap: 3px;
+ }
+ .connection{
+   width: 18px;
+   height: 13px;
+ }
+ .persent-battery{
+   font-size: 10px;
+ }
+ .five-g{
+   font-size: 14px;
+   margin: 0;
+   color: #fff
+ }
+/* vidgets */
+ .content__vidget{
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+ }
+ .weather-icon{
+   padding-top: 15px;
+   width: 20px;
+ }
+ .content__weather{
+   width: 90px;
+   height: 90px;
+   border-radius: 20px;
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   color: #fff;
+   background: linear-gradient(rgb(13,81,147), rgb(81,146,212));
+   margin: 10px 0px 0px 0px;
+   padding: 15px 15px;
+
+ }
+ .location{
+   font-size: 14px;
+ }
+ .temp{
+   margin: 0;
+   font-size: 32px;
+   line-height: 20px;
+ }
+
+ .summary{
+   margin-top: -5px;
+   font-size: 10px;
+ }
+
+ .high-low{
+   padding-top: 3px;
+   display: flex;
+   gap: 5px;
+ }
+ .content__calendar{
+   width: 90px;
+   height: 90px;
+   border-radius: 20px;
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   color: #fff;
+   background-color: azure;
+   margin: 10px 0px 0px 30px;
+   padding: 15px 15px;
+}
