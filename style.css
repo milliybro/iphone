@@ -180,3 +180,27 @@ body{
    font-size: 32px;
    margin-top: -15px;
 }
+
+/* apps */
+.app__row{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 10px;
+}
+.app{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.apps{
+   color: #fff;
+}
+
+.icon{
+   width: 55px;
+   height: 55px;
+   border-radius: 15px;
+}
+.app-name{
+   font-size: 14px;
+}
