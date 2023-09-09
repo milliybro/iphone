@@ -52,13 +52,17 @@ body{
    width: 340px;
    height: 665px;
    border-radius: 32px;
-   background: white;
    margin-top: -43px;
+   background: white;
    background-image: url("iphone14pro.jpg") !important;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
- }
+   height: 665px;
+   border-radius: 32px;
+   
+}
+
 
  .content__footer{
    position: absolute;
@@ -191,6 +195,7 @@ body{
    display: flex;
    flex-direction: column;
    align-items: center;
+   cursor: pointer;
 }
 .apps{
    color: #fff;
