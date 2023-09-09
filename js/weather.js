@@ -5,6 +5,8 @@ let summary = document.querySelector(".summary");
 let loc = document.querySelector(".location");
 let icon = document.querySelector(".icon");
 const kelvin = 273;
+const week = document.querySelector(".week");
+const day = document.querySelector(".day");
   
 window.addEventListener("load", () => {
   if (navigator.geolocation) {
@@ -38,3 +40,27 @@ window.addEventListener("load", () => {
     });
   }
 });
+
+//week and day
+let date = new Date();
+let weekSelect = date.toDateString().split(" ")[0];
+let dateSelect = date.toDateString().split(" ")[2];
+if(weekSelect === "Sat"){
+  weekSelect = "Saturday";
+} else if(weekSelect === "Sun"){
+  weekSelect = "Sunday";
+} else if(weekSelect === "Mon"){
+  weekSelect = "Monday";
+} else if(weekSelect === "Tue"){
+  weekSelect = "Tuesday";
+} else if(weekSelect === "Wed"){
+  weekSelect = "Wednesday";
+} else if(weekSelect === "Thu"){
+  weekSelect = "Thursday";
+} else if(weekSelect === "Fri"){
+  weekSelect = "Friday";
+}
+
+week.innerHTML = weekSelect
+day.innerHTML = dateSelect
+console.log(date);
