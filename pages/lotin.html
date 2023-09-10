@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="../css/lotin.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+   <title>Lotin-Krill</title>
+</head>
+
+<body>
+
+   <div class="smartphone">
+      <div class="content">
+         <div class="header">
+            <div class="content__header">
+               <h4 class="content__header-time"></h4>
+               <div class="content__header-right">
+                  <img class="connection" src="../image/connection.png" alt="">
+                  <h3 class="five-g">5G</h3>
+                  <img src="../image/battery.png" alt="">
+                  <h4 style="color: #fff; margin: 0;" class="battery"></h4>
+               </div>
+            </div>
+            <div class="content__clock">
+               <button class="location">
+                  <img src="../image/back.svg" alt="">
+                  back
+               </button>
+               <h1 style="color:#fff; margin-top: 0px; padding-left: 10px;">Lotin-Krill </h1>
+
+            </div>
+            <div class="content__lotin">
+               <form>
+                  <div style="display: flex; flex-direction: column; padding: 0px 10px; margin-top: -30px;">
+                     <div style=" display: flex; flex-direction: column; width: 100%;">
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                           <label style="color: #fff;"  for="">Lotin:</label>
+                        <p>
+                           <button style="background: #fff; border-radius: 8px; border: none; padding: 0px 5px;" type="button" value=" " onclick="clear_text()">
+                              <img src="../image/clear.svg" alt="">
+                           </button>
+                         </p>
+                        </div>
+                     <textarea style="padding: 10px; margin-top: -15px;" width="100%" height="100%" name="latin_text" wrap="logical" rows="10" cols="20" placeholder="Lotin..."></textarea>
+                     </div>
+                     <div style="display: flex; justify-content: center; align-items: center; gap: 5px; margin-top: 10px;">
+                        <font >
+                           <button style=" border: none; display: flex; flex-direction: column; align-items: center; font-weight: 900; padding: 5px 40px ; background-color: #fff; color: dodgerblue; border-radius: 10px;" type="button" onclick="jsvucko()">
+                              <img src="../image/down.svg" alt="">
+                              Krill
+                           </button>
+                         </font>&nbsp;
+                         
+                         <font face="Verdana">
+                           <button style="border: none; display: flex; flex-direction: column; align-items: center;
+
+                              padding: 5px 40px ; background-color: #fff; font-weight: 900; color: dodgerblue; border-radius: 10px;" type="button" value="latin" onclick="jscirulat()">
+                              <img src="../image/up.svg" alt="">
+                              Lotin
+                              </button>
+                         </font>
+                     </div>
+                     <div style="display: flex; flex-direction: column; width: 100%;">
+                       <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <label style="color: #fff;"  for="">Крилл:</label>
+                        <p>
+                           <button style="background: #fff; border-radius: 8px; border: none; padding: 0px 5px;" type="button" value="tozalash" onclick="clear_text()">
+                              <img src="../image/clear.svg" alt="">
+                              </button>
+                         </p>
+                       </div>
+                        <textarea style="padding: 10px;  margin-top: -15px;" width="100%" height="100%" name="cyrillic_text" wrap="logical" rows="10" cols="40" placeholder="Крилл..."></textarea>
+                     </div>
+                  </div>
+            
+                  
+                </form>
+
+            </div>
+
+         </div>
+      </div>
+   </div>
+
+
+   <script src="../js/clock.js"></script>
+   <script src="../js/time.js"></script>
+   <script src="../js/lotin.js"></script>
+</body>
+
+</html>

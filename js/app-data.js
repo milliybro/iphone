@@ -8,7 +8,7 @@ const app = [
   { id: 7, name: "Reminders", image: "../image/reminders.png" },
   { id: 8, name: "Clock", image: "../image/clock.png", click: "openClock()"},
   { id: 9, name: "Timer", image: "../image/timer.jpg", click: "openTimer()" },
-  { id: 10, name: "Alarm", image: "../image/alarm.png" },
-  { id: 11, name: "Lotin-Krill", image: "../image/lotin-krill.webp" },
+  { id: 10, name: "Alarm", image: "../image/alarm.png", click: "openAlarm()" },
+  { id: 11, name: "Lotin-Krill", image: "../image/lotin-krill.webp", click: "openLotin()" },
 
 ];

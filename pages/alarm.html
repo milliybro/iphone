@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="../css/timer.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+   <title>Alarm</title>
+</head>
+
+<body>
+
+   <div class="smartphone">
+      <div class="content">
+         <div class="header">
+            <div class="content__header">
+               <h4 class="content__header-time"></h4>
+               <div class="content__header-right">
+                  <img class="connection" src="../image/connection.png" alt="">
+                  <h3 class="five-g">5G</h3>
+                  <img src="../image/battery.png" alt="">
+                  <h4 style="color: #fff; margin: 0;" class="battery"></h4>
+               </div>
+            </div>
+            <div class="content__clock">
+               <button class="location">
+                  <img src="../image/back.svg" alt="">
+                  back
+               </button>
+               <div class="edit">
+                  <h6>Edit</h6>
+                  <h3>+</h3>
+               </div>
+               <h1 style="color:#fff; margin-top: -10px; padding-left: 10px;">Alarm</h1>
+
+            </div>
+            <div class="content__alarm">
+               <button class="stop-alarm">Stop</button>
+               <button class="play-alarm">Play</button>
+               <audio controls  style="display: none;">
+                  <source src="../image/alarm.mp3" type="audio/ogg" />
+                  Your browser does not support the audio tag.
+               </audio>
+
+            </div>
+            <div class="clock__footer">
+               <a href="clock.html">
+                  <button class="clock-btn"><img class="clock-btn-img" src="../image/world-clock.png" alt="">World
+                     Clock</button>
+               </a>
+               <a href="alarm.html">
+                  <button class="clock-btn clock-active"><img class="clock-btn-img" src="../image/alarm-active.png"
+                        alt="">Alarm</button>
+               </a>
+               <button class="clock-btn"><img class="clock-btn-img" src="../image/stopwatch.png"
+                     alt="">Stopwatch</button>
+               <a href="timer.html">
+                  <button class="clock-btn"><img class="clock-btn-img" src="../image/timer.png" alt="">Timer</button>
+               </a>
+
+
+
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <script src="../js/time.js"></script>
+   <script src="../js/weather.js"></script>
+   <script src="../js/clock.js"></script>
+   <script src="../js/timer.js"></script>
+   <script src="../js/alarm.js"></script>
+</body>
+
+</html>

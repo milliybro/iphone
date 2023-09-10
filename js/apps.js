@@ -29,3 +29,11 @@ function openClock() {
 function openTimer() {
   location.assign("pages/timer.html");
 }
+
+function openAlarm() {
+  location.assign("pages/alarm.html");
+}
+
+function openLotin() {
+  location.assign("pages/lotin.html");
+}
