@@ -24,3 +24,8 @@ getApplication();
 function openClock() {
    location.assign("pages/clock.html");
 }
+
+
+function openTimer() {
+  location.assign("pages/timer.html");
+}
