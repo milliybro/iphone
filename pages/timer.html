@@ -36,7 +36,37 @@
                
             </div>
             <div class="content__timer">
-               
+                
+               <div class="menu taymer">
+                  <div class="set">
+                      <div class="minuts">
+                          <select name="minut" id="minut"></select>
+                      </div>
+                      <div class="secunds">
+                          <select name="secund" id="secund">
+  
+                          </select>
+                      </div>
+                  </div>
+                  <div style="position: relative;" class="setting">
+                      <button class="taymerStart" onclick="start()">
+                          Start
+                      </button>
+                      <button class="taymerStop" onclick="stop()">
+                          Pause
+                      </button>
+                      <button class="taymerReset" onclick="reset()">
+                          Cancel
+                      </button>
+                  </div>
+                  <div class="timer__comment">
+                     <h5 style="margin: 0;">When Times Ends</h5>
+                     <h5 style="display: flex; align-items: center; margin: 0;" >Radar 
+                        <img src="../image/right.svg" alt="">
+                     </h5>
+                  </div>
+                  <audio class="taymerMusic"
+                      src="../image/timer.wav"></audio>
                   
             </div>
             <div class="clock__footer">

@@ -3,7 +3,7 @@
 
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="../css/timer.css">
+   <link rel="stylesheet" href="../css/alarm.css">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet">
    <title>Alarm</title>
@@ -35,15 +35,18 @@
                <h1 style="color:#fff; margin-top: -10px; padding-left: 10px;">Alarm</h1>
 
             </div>
-            <div class="content__alarm">
-               <button class="stop-alarm">Stop</button>
-               <button class="play-alarm">Play</button>
-               <audio controls  style="display: none;">
-                  <source src="../image/alarm.mp3" type="audio/ogg" />
-                  Your browser does not support the audio tag.
-               </audio>
-
-            </div>
+            <div class="content__select">
+               <div class="menu alarm">
+                  <input class="time" type="time" value="00:00">
+                  <audio class="alarmSong" src="../image/wakeup.wav"></audio>
+                  <p class="set">
+                    <button class="start" onclick="getTime()">Set</button>
+                    <button class="stop" onclick="stopSong()">Stop</button>
+                  </p>
+                </div>
+               </div>
+               <p class="attention" style=" color:red; display: flex; justify-content: center;">attention!!!</p>
+           
             <div class="clock__footer">
                <a href="clock.html">
                   <button class="clock-btn"><img class="clock-btn-img" src="../image/world-clock.png" alt="">World

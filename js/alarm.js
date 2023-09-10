@@ -1,21 +1,29 @@
-const stopBt = document.querySelector(".stop-alarm");
-const playBt = document.querySelector(".play-alarm");
-const audio = document.querySelector("audio");
 
-setInterval(() => {
-  let date = new Date();
-  let time = date.toLocaleTimeString("it-IT");
-  console.log(time);
-  if (time === "11:36:05") {
-   console.log(time);
-    audio.play(Infinity);
-  }
-}, 1000);
 
-stopBtn.addEventListener("click", () => {
-  audio.pause();
-});
 
-playBtn.addEventListener("click", () => {
-  audio.play();
-});
+const time = document.querySelector(".alarm .time");
+const alarmSong = document.querySelector(".alarmSong");
+
+let nowTime, nowHour, nowMinut, nowSecond;
+function getDate(){
+  nowTime = new Date();
+  nowHour = +nowTime.getHours();
+  nowMinut = +nowTime.getMinutes();
+  nowSecond = +nowTime.getSeconds();
+}
+getDate();
+time.value = `${nowHour < 10 ? '0' + nowHour:nowHour}:${nowMinut < 10 ? '0' + nowMinut : nowMinut}`;
+
+function getTime(){
+  getDate();
+  let melodyTime = time.value;
+  melodyTime = melodyTime.split(':');
+  melodyTime = (+melodyTime[0] - nowHour)  * 3600000 + (+melodyTime[1] - nowMinut) * 60000 - nowSecond * 1000;
+  setTimeout(() => {
+    alarmSong.play();
+  },melodyTime < 0 ? -melodyTime:melodyTime);
+}
+
+function stopSong(){
+  alarmSong.pause();
+}
