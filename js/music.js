@@ -14,6 +14,7 @@ let total_duration = document.querySelector('.total-duration');
 let wave = document.getElementById('wave');
 let randomIcon = document.querySelector('.fa-random');
 let curr_track = document.createElement('audio');
+let playPause = document.querySelector(".play__pause")
 
 let track_index = 0;
 let isPlaying = false;
@@ -36,21 +37,15 @@ const music_list = [
     {
       img : '../image/soxtalar.jpeg',
       name : 'Soxtalar',
-      artist : 'Shohrux(Ummon) & Milena Madmusayeva',
+      artist : 'Shohrux(Ummon)',
       music : '../image/soxtalar.m4a'
   },
-    {
-        img : 'images/faded.png',
-        name : 'Faded',
-        artist : 'Alan Walker',
-        music : 'music/Faded.mp3'
-    },
-    {
-        img : 'images/ratherbe.jpg',
-        name : 'Rather Be',
-        artist : 'Clean Bandit',
-        music : 'music/Rather Be.mp3'
-    }
+  {
+   img : '../image/qora.jpg',
+   name : 'Qora paket',
+   artist : 'Ippocik',
+   music : '../image/qora.mp3'
+},
 ];
 
 loadTrack(track_index);
@@ -117,18 +112,26 @@ function playpauseTrack(){
     isPlaying ? pauseTrack() : playTrack();
 }
 function playTrack(){
-    curr_track.play();
-    isPlaying = true;
+   curr_track.play();
+   isPlaying = true;
+   playPause.classList.add("fa")
+   playPause.classList.add("fa-pause")
+   playPause.classList.add("fa-3x")
+
     track_art.classList.add('rotate');
     wave.classList.add('loader');
-    playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
-}
-function pauseTrack(){
-    curr_track.pause();
-    isPlaying = false;
+
+   }
+   function pauseTrack(){
+      curr_track.pause();
+      isPlaying = false;
+      playPause.classList.add("fa")
+      playPause.classList.toggle("fa-pause")
+      playPause.classList.add("fa-3x")
+
     track_art.classList.remove('rotate');
     wave.classList.remove('loader');
-    playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+
 }
 function nextTrack(){
     if(track_index < music_list.length - 1 && isRandom === false){
