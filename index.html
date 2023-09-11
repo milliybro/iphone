@@ -3,6 +3,8 @@
 
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
    <link rel="stylesheet" href="style.css">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet">
@@ -13,60 +15,60 @@
 
    <div class="smartphone">
       <div class="content">
-        <div class="header">
-         <div class="content__header">
-            <h4 class="content__header-time"></h4>
-            <div class="content__header-right">
-               <img class="connection" src="image/connection.png" alt="">
-               <h3 class="five-g">5G</h3>
-               <div style="position: relative; margin-top: 5px;" class="battery-image">
-                  <img src="image/battery.png" alt="">
-                  <div class="battery-charging"></div>
-               </div>
-               <h4 style="color: #fff; margin: 0;" class="battery"></h4>
-            </div>
-         </div>
-         <div class="content__vidget">
-            <div class="content__weather">
-               <div class="location"></div>
-               <div class="temp">-°C</div>
-               <div class="icon">
-                  <img class="weather-icon" src="image/weather.png" alt="">
-               </div>
-               <div class="summary">----</div>
-               <div class="high-low">
-                  <h6 style="margin: 0;">H:32°</h6>
-                  <h6 style="margin: 0;">L:22°</h6>
+         <div class="header">
+            <div class="content__header">
+               <h4 class="content__header-time"></h4>
+               <div class="content__header-right">
+                  <img class="connection" src="image/connection.png" alt="">
+                  <h3 class="five-g">5G</h3>
+                  <div style="position: relative; margin-top: 5px;" class="battery-image">
+                     <img src="image/battery.png" alt="">
+                     <div class="battery-charging"></div>
+                  </div>
+                  <h4 style="color: #fff; margin: 0;" class="battery"></h4>
                </div>
             </div>
-            <div class="content__calendar">
-               <div class="week">
+            <div class="content__vidget">
+               <div class="content__weather">
+                  <div class="location"></div>
+                  <div class="temp">-°C</div>
+                  <div class="icon">
+                     <img class="weather-icon" src="image/weather.png" alt="">
+                  </div>
+                  <div class="summary">----</div>
+                  <div class="high-low">
+                     <h6 style="margin: 0;">H:32°</h6>
+                     <h6 style="margin: 0;">L:22°</h6>
+                  </div>
+               </div>
+               <div class="content__calendar">
+                  <div class="week">
+
+                  </div>
+                  <div class="day">
+
+                  </div>
+                  <p style="margin: 0; color: darkgray; font-size: 12px; padding-top: 15px;">No events today</p>
+               </div>
+            </div>
+            <div style="display: flex; justify-content: space-around; color: #fff; margin-top: -15px;">
+               <p>Weather</p>
+               <p>Calendar</p>
+            </div>
+            <!-- apps -->
+            <div class="apps">
+               <div class="app__row">
 
                </div>
-               <div class="day">
-
-               </div>
-               <p style="margin: 0; color: darkgray; font-size: 12px; padding-top: 15px;">No events today</p>
+            </div>
+            <p style="color: #fff; text-align: end;">music ishlaydi</p>
+            <div class="content__footer">
+               <img class="phone-icon" src="phone.png" alt="">
+               <img class="phone-icon" src="safari.png" alt="">
+               <img class="phone-icon" src="messange.png" alt="">
+               <img onclick="openMusic()" class="phone-icon" src="music.png" alt="">
             </div>
          </div>
-         <div style="display: flex; justify-content: space-around; color: #fff; margin-top: -15px;">
-            <p>Weather</p>
-            <p>Calendar</p>
-         </div>
-         <!-- apps -->
-         <div class="apps">
-            <div class="app__row">
-               
-            </div>
-         </div>
-         <p style="color: #fff; text-align: end;">music ishlaydi</p>
-         <div class="content__footer">
-            <img class="phone-icon" src="phone.png" alt="">
-            <img class="phone-icon" src="safari.png" alt="">
-            <img class="phone-icon" src="messange.png" alt="">
-            <img onclick="openMusic()"  class="phone-icon" src="music.png" alt="">
-         </div>
-        </div>
       </div>
    </div>
 
