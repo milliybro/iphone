@@ -11,7 +11,7 @@ body {
 }
 
 .details {
-   margin-top: -100px;
+   margin-top: -160px;
    display: flex;
    flex-direction: column;
 }
