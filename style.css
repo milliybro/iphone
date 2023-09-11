@@ -119,6 +119,12 @@ body{
    margin: 0;
    color: #fff
  }
+ .battery-charging{
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+ }
 /* vidgets */
  .content__vidget{
    display: flex;
