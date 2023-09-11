@@ -37,3 +37,7 @@ function openAlarm() {
 function openLotin() {
   location.assign("pages/lotin.html");
 }
+
+function openMusic() {
+  location.assign("pages/music.html");
+}

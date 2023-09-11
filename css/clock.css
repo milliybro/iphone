@@ -4,6 +4,8 @@ body{
    padding: 0;
    margin: 0;
    box-sizing: border-box;
+  background-color: darkslategray;
+
 }
 
 /* The device with borders */
@@ -136,7 +138,8 @@ body{
   position: relative;
   bottom: -340px;
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
+
  }
 
  .clock-btn{
